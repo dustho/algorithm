@@ -10,20 +10,13 @@ package leetcode.easy;
  */
 public class BestTimeToBuyAndSellStock {
   /**
-   * <p>Brute Force</p>
+   * <p>Greedy</p>
    * <p>
-   * 2중 for 문을 활용한 풀이로 가장 기본적인 풀이 방식입니다.
+   * 구매가를 최저가로 업데이트 해주면서,
+   * 동시에 현재 구매가를 기준으로 최대 수익을 업데이트해주는 방식입니다.
    * </p>
    */
   static class Solution {
-
-    /**
-     * <p>Greedy</p>
-     * <p>
-     * 구매가를 최저가로 업데이트 해주면서,
-     * 동시에 현재 구매가를 기준으로 최대 수익을 업데이트해주는 방식입니다.
-     * </p>
-     */
     public int maxProfit(int[] prices) {
       int boughtPrice = prices[0];
       int profit = 0;
