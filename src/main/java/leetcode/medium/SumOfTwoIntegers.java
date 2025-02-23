@@ -1,11 +1,11 @@
-package leetcode.easy;
+package leetcode.medium;
 
 /**
  * <p><a href="https://leetcode.com/problems/sum-of-two-integers/">SumOfTwoIntegers</a></p>
  * <p>
  * SumOfTwoIntegers 문제는 +, - 연산자 없이 2개의 숫자를 더한 값을 반환하는 문제입니다.
  * </p>
- * <p>#math, #bin-manipulation</p>
+ * <p>#math, #bit-manipulation</p>
  */
 public class SumOfTwoIntegers {
   /**
