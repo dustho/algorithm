@@ -8,13 +8,13 @@ package leetcode.medium;
  * <p>#math, #bit-manipulation</p>
  */
 public class SumOfTwoIntegers {
-  /**
-   * <p>Integer</p>
-   * <p>
-   * Java 에서는 Integer 객체에서 sum 메서드를 제공합니다.
-   * </p>
-   */
   static class Solution {
+    /**
+     * <p>Integer</p>
+     * <p>
+     * Java 에서는 Integer 객체에서 sum 메서드를 제공합니다.
+     * </p>
+     */
     public int getSum(int a, int b) {
       return Integer.sum(a, b);
     }
