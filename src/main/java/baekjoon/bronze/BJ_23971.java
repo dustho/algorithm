@@ -16,27 +16,25 @@ import java.io.OutputStreamWriter;
  */
 public class BJ_23971 {
 
-  static public class Main {
-    public static void main(String[] args) throws Exception {
-      try (
+  public static void main(String[] args) throws Exception {
+    try (
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-      ) {
-        String[] input = br.readLine().split(" ");
-        int solution = Main.solution(
-            Integer.parseInt(input[0]),
-            Integer.parseInt(input[1]),
-            Integer.parseInt(input[2]),
-            Integer.parseInt(input[3])
-        );
-        bw.write(String.valueOf(solution));
-        bw.flush();
-      }
+    ) {
+      String[] input = br.readLine().split(" ");
+      int solution = BJ_23971.solution(
+          Integer.parseInt(input[0]),
+          Integer.parseInt(input[1]),
+          Integer.parseInt(input[2]),
+          Integer.parseInt(input[3])
+      );
+      bw.write(String.valueOf(solution));
+      bw.flush();
     }
+  }
 
-    private static int solution(int row, int col, int height, int width) {
-      return (int) (Math.ceil((double) col / (width + 1)) * Math.ceil((double) (row) / (height + 1)));
-    }
+  private static int solution(int row, int col, int height, int width) {
+    return (int) (Math.ceil((double) col / (width + 1)) * Math.ceil((double) (row) / (height + 1)));
   }
 
 }
